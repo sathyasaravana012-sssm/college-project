@@ -1,0 +1,29 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Large datasets (regenerable from source, too large for git)
+dataset/
+split/
+real_world_dataset/
+
+# Trained weights over 100 MB exceed GitHub's per-file hard limit.
+# resnet18_plant_disease.keras and resnet18_improved.keras are 128.4 MB each.
+# Use Git LFS or an external release if these need to be shared.
+model/resnet18_plant_disease.keras
+model/resnet18_improved.keras
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
