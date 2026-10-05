@@ -93,9 +93,17 @@ print("Original image size:", image.size)
 # 5. Preprocess image
 # ==========================================
 
+# Central crop then resize to match training
+width, height = image.size
+target = min(width, height)
+left = (width - target) // 2
+top = (height - target) // 2
+right = left + target
+bottom = top + target
+image = image.crop((left, top, right, bottom))
 image = image.resize(IMAGE_SIZE)
 
-image_array = np.array(image)
+image_array = np.array(image, dtype=np.float32)
 
 # Convert pixel values from 0-255 to 0-1
 image_array = image_array / 255.0

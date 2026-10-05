@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Disease Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Plant Disease Detection</h1>
+    <p class="subtitle">
+      Upload a leaf photo and get a disease prediction using one of the trained models.
+    </p>
+  </header>
+
+  <main class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flash-container">
+      {% for category, message in messages %}
+      <div class="flash {{ category }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <section class="card">
+      <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data" id="upload-form">
+        <div class="form-group">
+          <label for="image">Upload an image</label>
+          <div class="dropzone" id="dropzone">
+            <input type="file" id="image" name="image" accept="image/*" required />
+            <div class="dropzone-content" id="dropzone-content">
+              <p class="dropzone-title">Drag & drop your image here, or click to browse</p>
+              <p class="dropzone-subtitle">Supported: PNG, JPG, JPEG, WebP, BMP, GIF (max 16 MB)</p>
+            </div>
+            <div class="preview hidden" id="preview">
+              <img id="preview-image" alt="Preview" />
+              <button type="button" class="remove-btn" id="remove-btn" title="Remove image">×</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="model">Choose a model</label>
+          <select id="model" name="model">
+            {% for model in models|sort %}
+            <option value="{{ model }}" {% if model==default_model %}selected{% endif %}>
+              {{ model }}
+            </option>
+            {% endfor %}
+          </select>
+          <p class="help-text">
+            <em>basic</em> = MobileNetV2 (no domain fine-tuning). The <em>*_plantdoc</em> variants are fine-tuned on
+            PlantDoc
+            train.
+          </p>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn primary">Predict</button>
+          <button type="button" class="btn secondary" id="clear-btn">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    {% if result and best %}
+    <section class="card result">
+      <h2>Prediction Result</h2>
+      <div class="result-header">
+        <div class="best-prediction">
+          <h3>{{ best.display_name }}</h3>
+          {% if best.plant %}
+          <p class="plant">{{ best.plant }}</p>
+          {% endif %}
+          <div class="confidence">
+            <span class="label">Confidence</span>
+            <div class="bar-container">
+              <div class="bar" style="width: {{ '%.1f'|format(best.confidence) }}%"></div>
+            </div>
+            <span class="value">{{ "%.1f"|format(best.confidence) }}%</span>
+          </div>
+          {% if best.is_healthy %}
+          <span class="badge healthy">Healthy</span>
+          {% else %}
+          <span class="badge disease">Disease</span>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if top_results and top_results|length > 1 %}
+      <div class="top5">
+        <h3>Top 5 Predictions</h3>
+        <div class="top5-list">
+          {% for r in top_results %}
+          <div class="top5-item">
+            <div class="top5-label">
+              <span class="rank">{{ loop.index }}</span>
+              <span class="name">{{ r.display_name }}</span>
+              {% if r.plant and r.plant != best.plant %}
+              <span class="plant-small">{{ r.plant }}</span>
+              {% endif %}
+            </div>
+            <div class="top5-bar">
+              <div class="bar" style="width: {{ '%.1f'|format(r.confidence) }}%"></div>
+            </div>
+            <span class="top5-value">{{ "%.1f"|format(r.confidence) }}%</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if not best.is_healthy and (best.cause or best.treatment) %}
+      <div class="disease-info">
+        {% if best.cause %}
+        <div class="info-block">
+          <h4>Cause</h4>
+          <p>{{ best.cause }}</p>
+        </div>
+        {% endif %}
+        {% if best.treatment %}
+        <div class="info-block">
+          <h4>Treatment</h4>
+          <p>{{ best.treatment }}</p>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if uploaded_filename %}
+      <p class="uploaded">Uploaded: {{ uploaded_filename }}</p>
+      {% endif %}
+    </section>
+    {% endif %}
+  </main>
+
+  <footer class="footer">
+    <p>
+      Models: PlantVillage-trained + PlantDoc fine-tuned. Note: PlantDoc test
+      fine-tuned scores are modest (~21–28% absolute) because field photos differ from
+      clean leaf-on-white images used in PlantVillage.
+    </p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

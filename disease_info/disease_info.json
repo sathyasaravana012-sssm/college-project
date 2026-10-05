@@ -1,0 +1,268 @@
+{
+  "Apple___Apple_scab": {
+    "display_name": "Apple Scab",
+    "plant": "Apple",
+    "is_healthy": false,
+    "cause": "Fungus Venturia inaequalis. Spores infect leaves and fruit during cool, wet spring weather, producing olive-green velvety blotches that darken and corker as they age.",
+    "treatment": "Remove fallen leaves and mummified fruit from the orchard, prune for airflow, and apply a protectant fungicide such as captan, sulfur, or myclobutanil from bud break through petal fall on susceptible varieties."
+  },
+  "Apple___Black_rot": {
+    "display_name": "Apple Black Rot",
+    "plant": "Apple",
+    "is_healthy": false,
+    "cause": "Fungus Botryosphaeria obtusa, entering through wounds and dying branch tips. Leaves show purple-bordered circular spots that turn brown with a frog-eye pattern, and fruit develops firm black rot.",
+    "treatment": "Cut out infected wood and mummified fruit during dry weather, remove fire-blight strikes, and prune dead branches back several inches into healthy tissue. Fungicides are secondary to sanitation."
+  },
+  "Apple___Cedar_apple_rust": {
+    "display_name": "Cedar Apple Rust",
+    "plant": "Apple",
+    "is_healthy": false,
+    "cause": "Fungus Gymnosporangium juniperi-virginianae, which needs both apple and a juniper host to complete its two-year life cycle. Spores arrive from nearby cedars in spring.",
+    "treatment": "Remove galls from junipers within a few hundred metres of the orchard, or plant resistant apple varieties. Fungicides at pink through petal fall suppress leaf infection but do not eradicate the fungus."
+  },
+  "Apple___healthy": {
+    "display_name": "Apple Healthy",
+    "plant": "Apple",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Blueberry___healthy": {
+    "display_name": "Blueberry Healthy",
+    "plant": "Blueberry",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "display_name": "Powdery Mildew",
+    "plant": "Cherry",
+    "is_healthy": false,
+    "cause": "Fungus Podosphaera clandestina. Thrives in warm days with cool humid nights and dense canopies, producing a white powdery coating on leaves and young fruit.",
+    "treatment": "Prune to open the canopy and improve air movement. Apply sulfur or a systemic fungicide such as myclobutanil or trifloxystrobin from shuck fall, alternating modes of action to slow resistance."
+  },
+  "Cherry_(including_sour)___healthy": {
+    "display_name": "Cherry Healthy",
+    "plant": "Cherry",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "display_name": "Gray Leaf Spot",
+    "plant": "Corn",
+    "is_healthy": false,
+    "cause": "Fungus Cercospora zeae-maydis. Survives on corn residue in the soil, so continuous corn and no-till systems raise risk. Produces long rectangular lesions restricted by leaf veins.",
+    "treatment": "Rotate to a non-host crop for at least two years, bury or shred residue, and choose hybrids with moderate resistance. Foliar fungicides at tasselling protect susceptible fields."
+  },
+  "Corn_(maize)___Common_rust_": {
+    "display_name": "Common Rust",
+    "plant": "Corn",
+    "is_healthy": false,
+    "cause": "Fungus Puccinia sorghi. Spores blow in from warmer growing regions each season and germinate in cool wet conditions, forming cinnamon-brown pustules on both leaf surfaces.",
+    "treatment": "Plant resistant hybrids, which is the primary control. Most hybrids are resistant, so significant outbreaks suggest a susceptible planting or a susceptible tasseling stage."
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "display_name": "Northern Corn Leaf Blight",
+    "plant": "Corn",
+    "is_healthy": false,
+    "cause": "Fungus Exserohilum turcicum. The most destructive corn foliar disease worldwide, producing large cigar-shaped grey-green lesions up to 15 cm long. Overwinters in residue and can spread far on wind-borne spores.",
+    "treatment": "Use resistant hybrids with the Ht trait, rotate crops, and manage residue. Fungicides are effective only if applied before lesions reach the ear leaf, typically around tasseling."
+  },
+  "Corn_(maize)___healthy": {
+    "display_name": "Corn Healthy",
+    "plant": "Corn",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Grape___Black_rot": {
+    "display_name": "Black Rot",
+    "plant": "Grape",
+    "is_healthy": false,
+    "cause": "Fungus Guignardia bidwellii. Infected mummified berries left on the vine or ground are the main inoculum source. Tan lesions with dark pycnidia form on leaves, and berries shrivel into hard black mummies.",
+    "treatment": "Remove mummified berries and prune out infected tissue, then apply a fungicide such as mancozeb, myclobutinil, or captan from bud break through fruit set. Removing mummies alone meaningfully reduces inoculum."
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "display_name": "Esca (Black Measles)",
+    "plant": "Grape",
+    "is_healthy": false,
+    "cause": "A complex of trunk-infecting fungi including Phaeomoniella chlamydospora and Phaeoacremonium, entering through pruning wounds. Produces interveinal striping and dark spots on leaves, and sour-smelling bunch rots.",
+    "treatment": "There is no reliable cure. Focus on prevention: prune during dry weather, apply wound sealant, remove infected vines, and replace dead wood with clean propagation material. Avoid large pruning cuts."
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "display_name": "Isariopsis Leaf Spot",
+    "plant": "Grape",
+    "is_healthy": false,
+    "cause": "Fungus Pseudocercospora vitis, favoured by warm humid conditions and dense canopies. Produces angular dark brown leaf spots that merge, and black spots on berry surfaces.",
+    "treatment": "Improve canopy ventilation by hedging and leaf removal, and reduce nitrogen, which promotes susceptible growth. Apply a protectant fungicide such as copper or mancozeb during humid periods."
+  },
+  "Grape___healthy": {
+    "display_name": "Grape Healthy",
+    "plant": "Grape",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "display_name": "Citrus Greening (HLB)",
+    "plant": "Orange",
+    "is_healthy": false,
+    "cause": "A phloem-limited bacterium spread by Asian citrus psyllid and by grafting infected budwood. Leaves develop blotchy asymmetrical yellowing and corky veins, while fruit is small, lopsided, and fails to colour properly.",
+    "treatment": "No cure exists. Remove infected trees promptly, use psyllid-resistant rootstock and clean budwood, and control psyllid with targeted insecticide and reflective mulch. Report suspected cases, as many regions mandate it."
+  },
+  "Peach___Bacterial_spot": {
+    "display_name": "Bacterial Spot",
+    "plant": "Peach",
+    "is_healthy": false,
+    "cause": "Bacterium Xanthomonas arboricola pv. pruni. Splashed by wind-driven rain from twig cankers, causing small angular purple-brown spots that drop out and leave shot holes.",
+    "treatment": "Plant resistant cultivars, dormant copper sprays to reduce overwintering inoculum, and copper during the season in wet areas. Avoid overhead irrigation and prune for airflow."
+  },
+  "Peach___healthy": {
+    "display_name": "Peach Healthy",
+    "plant": "Peach",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "display_name": "Bacterial Spot",
+    "plant": "Bell Pepper",
+    "is_healthy": false,
+    "cause": "Several Xanthomonas species. Warm wet conditions and splashing water drive infection, producing small water-soaked spots that turn brown and scabby, and cause fruit pitting.",
+    "treatment": "Use certified pathogen-free seed and transplants, rotate for two seasons, and apply copper mixtures. Avoid overhead watering and handle plants only when dry."
+  },
+  "Pepper,_bell___healthy": {
+    "display_name": "Bell Pepper Healthy",
+    "plant": "Bell Pepper",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Potato___Early_blight": {
+    "display_name": "Early Blight",
+    "plant": "Potato",
+    "is_healthy": false,
+    "cause": "Fungus Alternaria solani. Starts on older leaves as dark spots with concentric rings resembling a target, and advances to tuber lesions that are dry and corky.",
+    "treatment": "Rotate for two to three years, remove volunteer plants and debris, maintain balanced fertility, and apply chlorothalonil or mancozeb once disease is established in the field."
+  },
+  "Potato___Late_blight": {
+    "display_name": "Late Blight",
+    "plant": "Potato",
+    "is_healthy": false,
+    "cause": "Oomycete Phytophthora infestans. Cool wet weather triggers outbreaks that destroy a field in under a week. Pale water-soaked lesions on leaf margins expand into brown patches with white growth underneath in humid conditions.",
+    "treatment": "Highly urgent. Destroy infected material, do not compost, and apply protectant fungicides such as chlorothalonil, mancozeb, or a systemic product. Grow certified seed and eliminate cull piles."
+  },
+  "Potato___healthy": {
+    "display_name": "Potato Healthy",
+    "plant": "Potato",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Raspberry___healthy": {
+    "display_name": "Raspberry Healthy",
+    "plant": "Raspberry",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Soybean___healthy": {
+    "display_name": "Soybean Healthy",
+    "plant": "Soybean",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Squash___Powdery_mildew": {
+    "display_name": "Powdery Mildew",
+    "plant": "Squash",
+    "is_healthy": false,
+    "cause": "Fungus Podosphaera xanthii. Does not need free water for germination, so it thrives in crowded vines with poor airflow and moderate temperatures, coating leaves with white powder.",
+    "treatment": "Space plants widely and prune for airflow. Apply sulfur, potassium bicarbonate, horticultural oil, or myclobutanil early, before the canopy closes. Severely infected leaves stop producing."
+  },
+  "Strawberry___Leaf_scorch": {
+    "display_name": "Leaf Scorch",
+    "plant": "Strawberry",
+    "is_healthy": false,
+    "cause": "Fungus Diplocarpon earlianum. Small irregular purple spots coalesce into scorched-looking patches with no pale centre, distinct from common leaf spot which has a tan centre.",
+    "treatment": "Improve air circulation, avoid overhead irrigation, and remove infected leaves. Apply captan or myclobutanil when symptoms appear, and renovate the planting after harvest."
+  },
+  "Strawberry___healthy": {
+    "display_name": "Strawberry Healthy",
+    "plant": "Strawberry",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  },
+  "Tomato___Bacterial_spot": {
+    "display_name": "Bacterial Spot",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Xanthomonas species spread by splashing water and contaminated seed. Produces small dark greasy leaf spots that dry and tear, plus scabby raised fruit lesions.",
+    "treatment": "Use certified pathogen-free seed and transplants, stake and prune for airflow, avoid working plants when wet, and apply copper products. Rotate away from solanaceous crops."
+  },
+  "Tomato___Early_blight": {
+    "display_name": "Early Blight",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Fungus Alternaria solani. Begins on the oldest leaves near the soil with target-like concentric rings and yellow haloes, then advances upward and causes stem girdling and blossom-end rot of fruit.",
+    "treatment": "Rotate for two to three seasons, mulch to break soil splash, stake plants, and remove lower leaves. Apply chlorothalonil or mancozeb at first symptom and feed for adequate nutrition."
+  },
+  "Tomato___Late_blight": {
+    "display_name": "Late Blight",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Oomycete Phytophthora infestans. Grey-green water-soaked lesions on leaves with white sporulation on the underside in humid conditions, and firm brown greasy blotches on green fruit.",
+    "treatment": "Act immediately. Remove and destroy infected plants including roots, keep foliage dry, and apply a protectant such as chlorothalonil or copper, or a systemic late-blight product where permitted. The fungus is not reliably overwintering in most climates."
+  },
+  "Tomato___Leaf_Mold": {
+    "display_name": "Leaf Mold",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Fungus Passalora fulva, mainly in greenhouses where humidity is high. Pale yellow blotches on top correspond to olive-brown velvety mould underneath, usually starting on lower leaves.",
+    "treatment": "Reduce humidity below 85 percent and improve ventilation, water at the base rather than overhead, and remove infected leaves. Apply chlorothalonil or mancozeb in commercial production."
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "display_name": "Septoria Leaf Spot",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Fungus Septoria lycopersici. Numerous small circular spots with dark borders and pale grey centres containing black pycnidia. Starts on lower leaves and causes heavy defoliation.",
+    "treatment": "Remove infected leaves, mulch to stop soil splash, stake and prune for airflow, and rotate for two seasons. Apply chlorothalonil or mancozeb to protect new growth."
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "display_name": "Two-Spotted Spider Mite",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Two-spotted spider mite Tetranychus urticae, a sap-sucking arachnid rather than a fungus. Hot dry dusty conditions favour outbreaks, causing stippling, bronzing, and fine webbing on leaf undersides.",
+    "treatment": "Raise humidity and reduce dust, wash foliage with a strong water jet, and release predatory mites. Use miticides such as abamectin or insecticidal soap, rotating actives to prevent resistance."
+  },
+  "Tomato___Target_Spot": {
+    "display_name": "Target Spot",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Fungus Corynespora cassiicola, favoured by warm humid weather. Circular spots with concentric rings and a light centre form a target appearance, and lesions also girdle stems and scar fruit.",
+    "treatment": "Improve airflow and humidity management, use resistant cultivars, and rotate crops. Apply azoxystrobin, difenoconazole, or mancozeb where permitted, respecting label and resistance limits."
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "display_name": "Yellow Leaf Curl Virus",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Begomovirus TYLCV, transmitted persistently by the silverleaf whitefly. Plants become stunted with upward-curled yellow leaf margins and greatly reduced fruit set.",
+    "treatment": "No cure for infected plants, so remove and destroy them. Control whiteflies with insect-proof netting for transplants, reflective mulch, yellow sticky traps, and appropriate insecticides. Use resistant varieties where available."
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "display_name": "Tobacco Mosaic Virus",
+    "plant": "Tomato",
+    "is_healthy": false,
+    "cause": "Tobacco mosaic virus, highly stable and easily carried on hands, tools, and clothing, as well as in contaminated seed. Causes mottled light and dark green mosaic, leaf distortion, and stunted plants.",
+    "treatment": "Remove infected plants and wash hands with soap after handling. Disinfect tools with a 10 percent bleach solution or trisodium phosphate, and never smoke or handle tobacco plants before working with tomatoes."
+  },
+  "Tomato___healthy": {
+    "display_name": "Tomato Healthy",
+    "plant": "Tomato",
+    "is_healthy": true,
+    "cause": null,
+    "treatment": null
+  }
+}
