@@ -1,10 +1,14 @@
 $ErrorActionPreference = "Continue"
 $py = "venv\Scripts\python.exe"
 
+# Only models in config.BASELINE_MODELS are accepted by finetune_plantdoc.py.
+# Plain resnet18 was retired from that set (see the comment there), so it is no
+# longer a job here. Its checkpoint and evaluate_resnet18.py remain in the repo
+# if the ablation needs re-running.
 $jobs = @(
-    @{ model = "basic";          pv = 150; epochs = 5 },
-    @{ model = "resnet18_improved"; pv = 100; epochs = 4 },
-    @{ model = "resnet18";       pv = 100; epochs = 4 }
+    @{ model = "basic";             pv = 150; epochs = 5 },
+    @{ model = "mobilenetv2";       pv = 150; epochs = 5 },
+    @{ model = "resnet18_improved"; pv = 100; epochs = 4 }
 )
 
 foreach ($job in $jobs) {

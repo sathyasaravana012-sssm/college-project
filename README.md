@@ -33,6 +33,46 @@ Fine-tuned on a mixed class-balanced set (PlantVillage + PlantDoc train):
 
 The PlantDoc scores are modest because field photos (clutter, background) differ from PlantVillage's clean leaf-on-white images. The two ResNet18 models gained the most (+7.63 and +11.86 pts) as they were undertrained by the original validation split; the MobileNets were already stronger on PlantDoc and moved least (+2.12 and +1.69 pts).
 
+## Final evaluation
+
+`evaluate_final_models.py` produces the four reported rows. Metrics come from `metrics.py`, which computes precision/recall/F1 from a confusion matrix in numpy only — scikit-learn is not a project dependency.
+
+```bash
+venv\Scripts\python.exe evaluate_final_models.py
+```
+
+Results are written to `results/final_evaluations.json`.
+
+PlantVillage test (`split/test`, 8176 images, all 38 classes):
+
+| Model | Accuracy | Macro P | Macro R | Macro F1 |
+|---|---|---|---|---|
+| Simple CNN | 93.98% | 94.07% | 91.67% | 92.49% |
+| ResNet18 | 83.62% | 85.96% | 82.85% | 81.91% |
+| MobileNetV2 | 90.36% | 90.07% | 87.59% | 88.18% |
+| **Ensemble** | **95.06%** | **95.10%** | **94.26%** | **94.50%** |
+
+PlantDoc test (236 images, 27 classes present — see below):
+
+| Model | Accuracy | Macro P | Macro R | Macro F1 |
+|---|---|---|---|---|
+| Simple CNN | 26.27% | 34.43% | 26.71% | 26.45% |
+| ResNet18 | 8.90% | 18.35% | 9.05% | 9.23% |
+| MobileNetV2 | 25.85% | 27.90% | 25.91% | 23.93% |
+| Ensemble | 25.85% | 39.19% | 26.03% | 26.24% |
+
+Ensemble is unweighted soft voting on the mean of the three softmax outputs. No weights are fitted, so nothing here needs a held-out split and the result is deterministic.
+
+The ensemble gains +1.08 pts on PlantVillage over its best member but loses 0.42 pts on PlantDoc. Its macro *precision* is the highest of all four rows on both datasets (95.10% and 39.19%) while its recall is close to Simple CNN's, meaning it is more conservative: fewer confident mistakes, slightly fewer hits.
+
+Two caveats on these rows:
+
+`PLANTDOC_MAPPING` covers 28 PlantVillage classes, but `Tomato two spotted spider mites leaf` exists only in the PlantDoc **train** folder. The test split therefore contains 27 of the 28, and macro averages cover those 27. Averaging over all 28 would fold in a class with no test images. PlantDoc is also imbalanced (6–12 images per class), so macro scores are sensitive to the small classes; `metrics.py` also records weighted averages in the JSON.
+
+"Simple CNN" (`plant_disease_model.keras`) has a MobileNetV2 backbone with augmentation in the data pipeline, so it and the MobileNetV2 row are the same architecture family. Their predictions largely agree, which is why the ensemble tracks their consensus.
+
+The ResNet18 checkpoint is 128.4 MB and gitignored, so this row is not reproducible from the repository alone without retraining.
+
 ## Web app
 
 Flask app in `app.py` with central-crop preprocessing to match training. Models are selectable at runtime. Disease information for all 38 classes lives in `disease_info/disease_info.json`.
