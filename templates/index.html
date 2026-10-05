@@ -12,7 +12,8 @@
   <header class="header">
     <h1>Plant Disease Detection</h1>
     <p class="subtitle">
-      Upload a leaf photo and get a disease prediction using one of the trained models.
+      Upload a leaf photo or capture one with your camera, and get a disease prediction using one of the
+      trained models.
     </p>
   </header>
 
@@ -35,13 +36,17 @@
             <input type="file" id="image" name="image" accept="image/*" required />
             <div class="dropzone-content" id="dropzone-content">
               <p class="dropzone-title">Drag & drop your image here, or click to browse</p>
-              <p class="dropzone-subtitle">Supported: PNG, JPG, JPEG, WebP, BMP, GIF (max 16 MB)</p>
+              <p class="dropzone-subtitle">Supported: PNG, JPG, JPEG, WebP, BMP, GIF (max 16 MB). Or use
+                <em>Take photo</em> to capture one with your camera.</p>
             </div>
             <div class="preview hidden" id="preview">
               <img id="preview-image" alt="Preview" />
               <button type="button" class="remove-btn" id="remove-btn" title="Remove image">×</button>
             </div>
           </div>
+
+          <input type="file" id="camera-input" accept="image/*" capture="environment"
+                 class="hidden" aria-hidden="true" tabindex="-1" />
         </div>
 
         <div class="form-group">
@@ -62,6 +67,7 @@
 
         <div class="actions">
           <button type="submit" class="btn primary">Predict</button>
+          <button type="button" class="btn secondary" id="take-photo-btn">Take photo</button>
           <button type="button" class="btn secondary" id="clear-btn">Clear</button>
         </div>
       </form>

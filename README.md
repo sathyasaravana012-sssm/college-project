@@ -5,9 +5,9 @@ This is a plant leaf disease classification project built with TensorFlow/Keras.
 ## Dataset layout
 
 - split/train, split/validation, split/test — PlantVillage (38 classes). Class indices are assigned using Python's ordinal sorted() of folder names. This order matches all models and predict.py.
-- eal_world_dataset/real_world_dataset/PlantDoc-Dataset-master/train — PlantDoc training images (28 of 38 classes mapped). Not used for baseline training; used for fine-tuning.
-- eal_world_dataset/real_world_dataset/PlantDoc-Dataset-master/test — PlantDoc test set (236 images, 27 folders). Used as the held-out generalization benchmark.
-- eal_world_dataset/real_world_dataset/PlantDoc-Dataset-master/plantdoc_preprocessed — CLAHE-preprocessed copy of the PlantDoc test images.
+- `real_world_dataset/real_world_dataset/PlantDoc-Dataset-master/train — PlantDoc training images (28 of 38 classes mapped). Not used for baseline training; used for fine-tuning.
+- `real_world_dataset/real_world_dataset/PlantDoc-Dataset-master/test — PlantDoc test set (236 images, 27 folders). Used as the held-out generalization benchmark.
+- `real_world_dataset/real_world_dataset/PlantDoc-Dataset-master/plantdoc_preprocessed — CLAHE-preprocessed copy of the PlantDoc test images.
 
 A note on ordering: image_dataset_from_directory uses case-sensitive ASCII sorted(os.listdir(...)). This differs from case-insensitive Explorer/Excel sorts. Do not reorder folder names.
 
@@ -35,39 +35,41 @@ The PlantDoc scores are modest because field photos (clutter, background) differ
 
 ## Web app
 
-Flask app in pp.py with central-crop preprocessing to match training. Models are selectable at runtime. Disease information for all 38 classes lives in disease_info/disease_info.json.
+Flask app in `app.py` with central-crop preprocessing to match training. Models are selectable at runtime. Disease information for all 38 classes lives in `disease_info/disease_info.json`.
+
+Images can be uploaded (drag & drop or file browse) or captured with a device camera using the "Take photo" button. Capture uses a dedicated `<input type="file" capture="environment">` with no `name` attribute, so it never posts on its own; `static/js/main.js` copies the captured file into the main `#image` input via `DataTransfer` and the form still submits a single `image` field. Unlike a live `getUserMedia` viewfinder, this requires no secure context, so it works over plain HTTP on a LAN address as well as on `127.0.0.1`. Camera photos are field images and therefore land in the ~21-28% real-world accuracy band rather than the PlantVillage validation figure.
 
 Run the app:
 
-`ash
+```bash
 venv\Scripts\python.exe app.py
-`
+```
 
 Open http://127.0.0.1:5000/ in your browser. Supported uploads: PNG, JPG, JPEG, WebP, BMP, GIF (max 16 MB).
 
 ## CLI prediction
 
-predict.py loads a single model and predicts on 	est_images/test5.jpg by default. It uses the same central-crop preprocessing as the app.
+predict.py loads a single model and predicts on `test_images/test5.jpg` by default. It uses the same central-crop preprocessing as the app.
 
-`ash
+```bash
 venv\Scripts\python.exe predict.py
-`
+```
 
 ## Fine-tuning
 
-inetune_plantdoc.py builds a class-balanced mixed dataset (PlantVillage + PlantDoc train), oversamples PlantDoc, and fine-tunes any of the four checkpoints. Validation is on PlantVillage only; the PlantDoc test set is never used for training or selection.
+`finetune_plantdoc.py` builds a class-balanced mixed dataset (PlantVillage + PlantDoc train), oversamples PlantDoc, and fine-tunes any of the four checkpoints. Validation is on PlantVillage only; the PlantDoc test set is never used for training or selection.
 
-`ash
+```bash
 venv\Scripts\python.exe finetune_plantdoc.py --model mobilenetv2 --epochs 5
-`
+```
 
 ## Environment
 
 Install dependencies:
 
-`ash
+```bash
 venv\Scripts\python.exe -m pip install -r requirements.txt
-`
+```
 
 Note: TensorFlow GPU support is limited on native Windows for TF 2.11+. This code runs on CPU.
 

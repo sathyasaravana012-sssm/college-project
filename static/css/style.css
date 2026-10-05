@@ -128,6 +128,13 @@ label {
   cursor: pointer;
 }
 
+/* Utility for elements JS hides: the dropzone placeholder text and the
+   offscreen camera input. Without this rule the "hidden" class did nothing
+   and the placeholder stayed visible under the preview. */
+.hidden {
+  display: none;
+}
+
 .dropzone-content {
   pointer-events: none;
 }

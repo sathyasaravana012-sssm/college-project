@@ -6,6 +6,18 @@ const previewImage = document.getElementById("preview-image");
 const removeBtn = document.getElementById("remove-btn");
 const clearBtn = document.getElementById("clear-btn");
 const form = document.getElementById("upload-form");
+const cameraInput = document.getElementById("camera-input");
+const takePhotoBtn = document.getElementById("take-photo-btn");
+
+// If the camera fallback swapped the "image" name onto #camera-input, any
+// normal file pick must take it back, otherwise the pick posts no image field.
+const restorePrimaryInput = () => {
+  if (!fileInput.hasAttribute("name")) {
+    fileInput.setAttribute("name", "image");
+    fileInput.setAttribute("required", "required");
+    cameraInput.removeAttribute("name");
+  }
+};
 
 const setupDropzone = () => {
   dropzone.addEventListener("click", (e) => {
@@ -31,6 +43,7 @@ const setupDropzone = () => {
     dropzone.classList.remove("dragover");
 
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      restorePrimaryInput();
       fileInput.files = e.dataTransfer.files;
       handleFileSelect(e.dataTransfer.files[0]);
     }
@@ -38,6 +51,7 @@ const setupDropzone = () => {
 
   fileInput.addEventListener("change", (e) => {
     if (e.target.files && e.target.files.length > 0) {
+      restorePrimaryInput();
       handleFileSelect(e.target.files[0]);
     }
   });
@@ -55,8 +69,55 @@ const handleFileSelect = (file) => {
   reader.readAsDataURL(file);
 };
 
+// Hands the captured file to the real #image input so /predict keeps seeing a
+// single "image" field. The camera input carries no name for the same reason.
+const attachCameraFile = (file) => {
+  if (!file) return;
+
+  if (typeof DataTransfer === "function") {
+    const dt = new DataTransfer();
+    dt.items.add(file);
+    fileInput.files = dt.files;
+    console.info("camera capture attached via DataTransfer");
+  } else {
+    // Safari < 14.1 cannot assign to input.files. Post the capture from the
+    // camera input instead: move the name onto it and relax #image, which has
+    // no file and would otherwise block submit.
+    fileInput.removeAttribute("name");
+    fileInput.removeAttribute("required");
+    cameraInput.setAttribute("name", "image");
+    console.warn("DataTransfer unavailable; posting from the camera input");
+  }
+
+  handleFileSelect(file);
+};
+
+let cameraOpening = false;
+
+if (cameraInput && takePhotoBtn) {
+  takePhotoBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (cameraOpening) return;
+    cameraOpening = true;
+    setTimeout(() => (cameraOpening = false), 1000);
+    cameraInput.click();
+  });
+
+  cameraInput.addEventListener("change", (e) => {
+    if (e.target.files && e.target.files.length > 0) {
+      attachCameraFile(e.target.files[0]);
+    }
+  });
+}
+
 const clearPreview = () => {
   fileInput.value = "";
+  if (cameraInput) cameraInput.value = "";
+  if (!fileInput.hasAttribute("name")) {
+    fileInput.setAttribute("name", "image");
+    cameraInput.removeAttribute("name");
+  }
+  fileInput.setAttribute("required", "required");
   previewImage.src = "";
   dropzoneContent.classList.remove("hidden");
   preview.classList.add("hidden");
