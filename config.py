@@ -26,12 +26,16 @@ SEED = 42
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".webp", ".gif"}
 
-# Model checkpoints, ordered from weakest/earliest to strongest.
+# Model checkpoints, ordered from weakest/earliest to strongest. These are the
+# models the app offers and finetune_plantdoc.py accepts. The plain ResNet18
+# checkpoints (resnet18_plant_disease.keras, resnet18_plantdoc.keras) are
+# deliberately absent: they scored lowest of the four on PlantDoc (13.56%
+# fine-tuned vs 20.76% for the improved variant) and cost 128.4 MB each to load.
+# The weights and their training/evaluation scripts are still in the repo, so
+# train_resnet18.py and evaluate_resnet18.py continue to work.
 BASELINE_MODELS = {
     "basic": MODEL_DIR / "plant_disease_model.keras",
     "basic_plantdoc": MODEL_DIR / "basic_plantdoc.keras",
-    "resnet18": MODEL_DIR / "resnet18_plant_disease.keras",
-    "resnet18_plantdoc": MODEL_DIR / "resnet18_plantdoc.keras",
     "resnet18_improved": MODEL_DIR / "resnet18_improved.keras",
     "resnet18_improved_plantdoc": MODEL_DIR / "resnet18_improved_plantdoc.keras",
     "mobilenetv2": MODEL_DIR / "mobilenetv2_plant_disease.keras",

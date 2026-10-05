@@ -37,6 +37,8 @@ The PlantDoc scores are modest because field photos (clutter, background) differ
 
 Flask app in `app.py` with central-crop preprocessing to match training. Models are selectable at runtime. Disease information for all 38 classes lives in `disease_info/disease_info.json`.
 
+Six of the eight checkpoints are selectable in the app: `basic`, `basic_plantdoc`, `mobilenetv2`, `mobilenetv2_plantdoc`, `resnet18_improved`, and `resnet18_improved_plantdoc`. The two plain ResNet18 checkpoints are not offered, because they scored lowest of the four (13.56% on PlantDoc, against 20.76% for the improved variant) and cost 128.4 MB each to load. Their weights remain in `model/` and `train_resnet18.py` / `evaluate_resnet18.py` still work, so the accuracy table above stays reproducible.
+
 Images can be uploaded (drag & drop or file browse) or captured with a device camera using the "Take photo" button. Capture uses a dedicated `<input type="file" capture="environment">` with no `name` attribute, so it never posts on its own; `static/js/main.js` copies the captured file into the main `#image` input via `DataTransfer` and the form still submits a single `image` field. Unlike a live `getUserMedia` viewfinder, this requires no secure context, so it works over plain HTTP on a LAN address as well as on `127.0.0.1`. Camera photos are field images and therefore land in the ~21-28% real-world accuracy band rather than the PlantVillage validation figure.
 
 Run the app:
