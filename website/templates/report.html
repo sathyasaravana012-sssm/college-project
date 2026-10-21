@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Results & Graphs — PlantWild Disease Detector{% endblock %}
+{% block content %}
+<h1>Results &amp; training graphs</h1>
+<p class="lead">
+  34-class PlantWild subset &middot; official train/val/test split
+  (5,398 / 757 / 1,523 images) &middot; all training ran on CPU.
+</p>
+
+<section class="card">
+  <h2>Test-set metrics (1,523 images)</h2>
+  <table class="metrics-table">
+    <thead>
+      <tr>
+        <th>Model</th><th>Accuracy</th><th>Macro precision</th>
+        <th>Macro recall</th><th>Macro F1</th><th>Correct</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for name, m in individual.items() %}
+      <tr>
+        <td>{{ name }}</td>
+        <td>{{ '%.2f'|format(m.test_accuracy * 100) }}%</td>
+        <td>{{ '%.2f'|format(m.macro_precision * 100) }}%</td>
+        <td>{{ '%.2f'|format(m.macro_recall * 100) }}%</td>
+        <td>{{ '%.2f'|format(m.macro_f1 * 100) }}%</td>
+        <td>{{ m.correct }}/{{ m.total }}</td>
+      </tr>
+      {% endfor %}
+      {% for name, m in ensembles.items() %}
+      <tr class="{% if name == best_name %}best-row{% endif %}">
+        <td>Ensemble: {{ name.replace('_', ' ') }}{% if name == best_name %} ★{% endif %}</td>
+        <td>{{ '%.2f'|format(m.test_accuracy * 100) }}%</td>
+        <td>{{ '%.2f'|format(m.macro_precision * 100) }}%</td>
+        <td>{{ '%.2f'|format(m.macro_recall * 100) }}%</td>
+        <td>{{ '%.2f'|format(m.macro_f1 * 100) }}%</td>
+        <td>{{ m.correct }}/{{ m.total }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="muted">
+    ★ Best ensemble. Equal averaging drags the strong DINOv2 model down toward the weak
+    CNNs, so the validation-accuracy-weighted average
+    ({% for k, v in weights.items() %}{{ k }} {{ '%.0f'|format(v * 100) }}%{% if not loop.last %}, {% endif %}{% endfor %})
+    is used for live predictions.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Training progress</h2>
+  <div class="figure-grid">
+    {% for fname, caption in figures %}
+    <figure>
+      <img src="{{ url_for('static', filename='figures/' + fname) }}" alt="{{ caption }}" loading="lazy">
+      <figcaption>{{ caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="card">
+  <h2>How to read the confusion matrices</h2>
+  <p class="muted">
+    Rows = true class, columns = predicted class, normalized per row; the diagonal is
+    correct predictions. The weak models (Basic CNN, ResNet18) are nearly blind on this
+    fine-grained 34-class problem; MobileNetV2 learns a handful of classes; DINOv2
+    linear probing covers the diagonal broadly — which is why it dominates the ensemble.
+    Full per-class tables and top-confusion lists live in
+    <code>plantwild_report.md</code> and <code>model/plantwild_ensemble_results.json</code>.
+  </p>
+</section>
+
+<p><a class="btn" href="{{ url_for('index') }}">← Predict on an image</a></p>
+{% endblock %}

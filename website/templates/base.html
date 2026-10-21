@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}PlantWild Disease Detector{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ url_for('index') }}">🌿 PlantWild Detector</a>
+    <nav>
+      <a href="{{ url_for('index') }}">Predict</a>
+      <a href="{{ url_for('report') }}">Results &amp; Graphs</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="alert">
+          {% for m in messages %}<div>{{ m }}</div>{% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    PlantWild subset &middot; 34 classes &middot; 7,678 images &middot;
+    ensemble of Basic CNN, ResNet18, MobileNetV2, DINOv2 + logreg
+  </footer>
+</body>
+</html>

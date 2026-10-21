@@ -1,0 +1,19 @@
+{
+    "model": "Basic CNN",
+    "plantvillage": {
+        "accuracy": 90.73,
+        "correct": 7418,
+        "total": 8176,
+        "macro_precision": 89.09,
+        "macro_recall": 87.03,
+        "macro_f1": 87.69
+    },
+    "plantdoc": {
+        "accuracy": 5.52,
+        "correct": 8,
+        "total": 145,
+        "macro_precision": 8.17,
+        "macro_recall": 2.98,
+        "macro_f1": 3.81
+    }
+}

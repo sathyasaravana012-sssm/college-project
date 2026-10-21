@@ -1,0 +1,58 @@
+{
+  "mobilenet_model_key": "basic",
+  "dinov2_backbone": "dinov2_vits14",
+  "summaries": [
+    {
+      "model": "dinov2",
+      "dataset": "plantvillage",
+      "images": 8176,
+      "classes_present": 38,
+      "accuracy_percent": 98.72798434442271,
+      "macro_precision": 0.9843374264671253,
+      "macro_recall": 0.9822658916988333,
+      "macro_f1": 0.9832690109855339,
+      "weighted_precision": 0.987285519893069,
+      "weighted_recall": 0.9872798434442269,
+      "weighted_f1": 0.9872663168503494
+    },
+    {
+      "model": "mobilenetv2",
+      "dataset": "plantvillage",
+      "images": 8176,
+      "classes_present": 38,
+      "accuracy_percent": 94.32485322896281,
+      "macro_precision": 0.9427652906821319,
+      "macro_recall": 0.9246408270506038,
+      "macro_f1": 0.930982580705838,
+      "weighted_precision": 0.946292083729119,
+      "weighted_recall": 0.9432485322896282,
+      "weighted_f1": 0.9432944115751177
+    },
+    {
+      "model": "dinov2",
+      "dataset": "realworld",
+      "images": 236,
+      "classes_present": 27,
+      "accuracy_percent": 41.94915254237288,
+      "macro_precision": 0.5231412287784837,
+      "macro_recall": 0.41979985035540585,
+      "macro_f1": 0.4059577257725406,
+      "weighted_precision": 0.5349076289972352,
+      "weighted_recall": 0.4194915254237287,
+      "weighted_f1": 0.4084216932945746
+    },
+    {
+      "model": "mobilenetv2",
+      "dataset": "realworld",
+      "images": 236,
+      "classes_present": 27,
+      "accuracy_percent": 24.576271186440678,
+      "macro_precision": 0.32908516380738606,
+      "macro_recall": 0.24092646037090482,
+      "macro_f1": 0.24482978352710152,
+      "weighted_precision": 0.32940895027759437,
+      "weighted_recall": 0.24576271186440676,
+      "weighted_f1": 0.24835864667834273
+    }
+  ]
+}

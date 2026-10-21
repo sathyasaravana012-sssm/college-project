@@ -1,0 +1,17 @@
+{
+    "model": "Simple CNN",
+    "architecture": "Custom CNN trained from scratch",
+    "image_size": [
+        224,
+        224
+    ],
+    "num_classes": 38,
+    "epochs_requested": 10,
+    "test_accuracy": 0.9072896281800391,
+    "macro_precision": 0.8909366254460307,
+    "macro_recall": 0.8702620018410403,
+    "macro_f1": 0.8769099595250897,
+    "correct": 7418,
+    "total": 8176,
+    "model_path": "C:\\Plant_disease_detection\\model\\simple_cnn_plant_disease.keras"
+}

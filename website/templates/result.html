@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Prediction — PlantWild Disease Detector{% endblock %}
+{% block content %}
+<h1>Prediction</h1>
+<p class="lead">Source image: <code>{{ label }}</code></p>
+
+<div class="grid-2">
+  <section class="card">
+    <h2>Input</h2>
+    <img class="input-image" src="{{ image_url }}" alt="input leaf">
+  </section>
+
+  <section class="card card-highlight">
+    <h2>Ensemble result <span class="tag">validation-weighted</span></h2>
+    <p class="big-prediction">{{ result.ensemble_weighted.top1.class }}</p>
+    <p class="big-prob">{{ '%.1f'|format(result.ensemble_weighted.top1.prob * 100) }}% confidence</p>
+
+    <h3>Top 5</h3>
+    <div class="bars">
+      {% for item in result.ensemble_weighted.top5 %}
+      <div class="bar-row">
+        <span class="bar-label">{{ item.class }}</span>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: {{ '%.1f'|format(item.prob * 100) }}%"></div>
+        </div>
+        <span class="bar-value">{{ '%.1f'|format(item.prob * 100) }}%</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="muted">
+      Equal-weight mean of the same four models would say
+      <strong>{{ result.ensemble_equal.top1.class }}</strong>
+      ({{ '%.1f'|format(result.ensemble_equal.top1.prob * 100) }}%) — it performs
+      worse overall (62.31% vs 73.87% test accuracy), so the weighted average is primary.
+    </p>
+  </section>
+</div>
+
+<section class="card">
+  <h2>Individual model opinions</h2>
+  <div class="model-grid">
+    {% for m in result.per_model %}
+    <div class="model-card">
+      <h3>{{ m.name }}</h3>
+      <p class="model-top1">{{ m.top1.class }}</p>
+      <p class="model-conf">{{ '%.1f'|format(m.top1.prob * 100) }}%</p>
+      <ul class="model-top5">
+        {% for item in m.top5 %}
+        <li>
+          <span>{{ item.class }}</span>
+          <span>{{ '%.1f'|format(item.prob * 100) }}%</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<p><a class="btn" href="{{ url_for('index') }}">← Try another image</a></p>
+{% endblock %}

@@ -105,6 +105,41 @@ venv\Scripts\python.exe predict.py
 venv\Scripts\python.exe finetune_plantdoc.py --model mobilenetv2 --epochs 5
 ```
 
+## PlantWild (34 classes)
+
+`plantwild/` holds the PlantWild field-photograph dataset restricted to the 34 PlantVillage-compatible classes (5,398 train / 757 validation / 1,523 test). Only the small metadata files are tracked; the images are regenerable from `plantwild/readme.txt`. Three models were trained from scratch on CPU via `run_plantwild_training.ps1` (`train_plantwild_simple_cnn.py`, `train_plantwild_resnet18.py`, `train_plantwild_mobilenetv2.py`) and evaluated by `evaluate_final_ensemble.py` / `ensemble_plantwild.py`:
+
+| Model | PlantWild test acc | macro F1 |
+|---|---|---|
+| Basic CNN | 10.05% | 8.44% |
+| ResNet18 | 10.44% | 5.71% |
+| MobileNetV2 | 38.67% | 35.69% |
+| DINOv2 + logreg | 73.87% | 72.95% |
+| **Weighted ensemble** | **73.87%** | 72.77% |
+
+The ensemble is validation-accuracy weighted soft voting (`model/plantwild_ensemble_results.json`); equal averaging was measurably worse (62.31%) because two members sit near chance. Per-class scores, hardest classes, and top confusions are in `plantwild_report.md` (regenerate with `make_plantwild_report.py` and `generate_plantwild_figures.py`).
+
+## DINOv2 experiment
+
+`dinov2_experiment/` is a self-contained PyTorch experiment (own venv, see `dinov2_experiment/README.md`) that freezes `dinov2_vits14` features and fits a logistic-regression head:
+
+| Dataset | DINOv2 + logreg | MobileNetV2 |
+|---|---|---|
+| PlantVillage test (38 classes) | 98.73% | 94.32% |
+| PlantDoc test (27 classes, real world) | **41.95%** | 24.58% |
+
+41.95% is the best real-world number in the project (against 28.39% for the best TF model) but rests on only 236 images across 27 classes — treat it as directional, not conclusive.
+
+## PlantWild website
+
+A second Flask app, `website/app.py`, serves the four-model PlantWild weighted ensemble with a `/report` page (confusion matrices and training graphs):
+
+```bash
+venv\Scripts\python.exe website\app.py
+```
+
+Open http://127.0.0.1:5000 — upload a leaf photo or pick a test sample. Smoke test: `venv\Scripts\python.exe website\test_app.py`.
+
 ## Environment
 
 Install dependencies:
@@ -120,3 +155,4 @@ Note: TensorFlow GPU support is limited on native Windows for TF 2.11+. This cod
 - split/validation had two misnamed folders (P_Eb, Tomato_Early_Blight) that were corrected in this session. All 38 class indices now align across splits.
 - The PlantDoc mapping covers 28 of 38 PlantVillage classes. Classes without PlantDoc coverage still produce predictions but have no real-world validation examples.
 - Absolute PlantDoc accuracy is low (~21–28%). This is primarily a domain gap (field vs lab images), not a preprocessing bug; central-crop preprocessing matches the training pipeline and gives 28.39% for the best model.
+- Six checkpoints exceed GitHub's 100 MB per-file limit and are gitignored: the four ResNet18 variants plus `plantwild_resnet18.keras` (128 MB), `plantwild_simple_cnn.keras` (148 MB), and `simple_cnn_plant_disease.keras` (148 MB). Rows that depend on them (see `plantwild_report.md`, `results/final_evaluations.json`) are not reproducible from a fresh clone without retraining.

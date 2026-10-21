@@ -1,0 +1,34 @@
+﻿apple black rot
+apple leaf
+apple rust
+apple scab
+bell pepper leaf
+bell pepper leaf spot
+blueberry leaf
+cherry leaf
+cherry powdery mildew
+citrus greening disease
+corn gray leaf spot
+corn leaf
+corn northern leaf blight
+corn rust
+grape black rot
+grape leaf
+grape leaf spot
+peach leaf
+potato early blight
+potato late blight
+potato leaf
+raspberry leaf
+soybean leaf
+squash powdery mildew
+strawberry leaf
+strawberry leaf scorch
+tomato bacterial leaf spot
+tomato early blight
+tomato late blight
+tomato leaf
+tomato leaf mold
+tomato mosaic virus
+tomato septoria leaf spot
+tomato yellow leaf curl virus

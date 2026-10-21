@@ -1,0 +1,46 @@
+{
+    "dataset": "PlantWild (34 classes)",
+    "models": [
+        {
+            "model": "Basic CNN",
+            "test_accuracy": 0.10045961917268549,
+            "macro_precision": 0.10285027262750808,
+            "macro_recall": 0.08441421248038762,
+            "macro_f1": 0.08440351937944511,
+            "best_val_accuracy": null,
+            "correct": 153,
+            "total": 1523
+        },
+        {
+            "model": "ResNet18",
+            "test_accuracy": 0.10439921208141825,
+            "macro_precision": 0.0540468086286176,
+            "macro_recall": 0.09593557323340973,
+            "macro_f1": 0.057094749732550555,
+            "best_val_accuracy": 0.09643328934907913,
+            "correct": 159,
+            "total": 1523
+        },
+        {
+            "model": "MobileNetV2",
+            "test_accuracy": 0.38673670387393305,
+            "macro_precision": 0.3969901361065958,
+            "macro_recall": 0.36762665770089425,
+            "macro_f1": 0.35685389026265146,
+            "best_val_accuracy": 0.3764861226081848,
+            "correct": 589,
+            "total": 1523
+        },
+        {
+            "model": "DINOv2 + logreg",
+            "test_accuracy": 0.7386736703873933,
+            "macro_precision": 0.7416997497798593,
+            "macro_recall": 0.7273921705477062,
+            "macro_f1": 0.7294777426902037,
+            "best_val_accuracy": 0.7344782034346103,
+            "correct": 1125,
+            "total": 1523
+        }
+    ],
+    "missing": []
+}

@@ -1,0 +1,26 @@
+{
+    "ensemble_method": "Soft voting - average of Basic CNN, ResNet18, and MobileNetV2 probabilities",
+    "models": {
+        "Basic CNN": "C:\\Plant_disease_detection\\model\\simple_cnn_plant_disease.keras",
+        "ResNet18": "C:\\Plant_disease_detection\\model\\resnet18_improved.keras",
+        "MobileNetV2": "C:\\Plant_disease_detection\\model\\mobilenetv2_plant_disease.keras"
+    },
+    "plantvillage": {
+        "classes": 38,
+        "total_images": 8176,
+        "correct": 4031,
+        "accuracy": 49.3,
+        "macro_precision": 78.94,
+        "macro_recall": 39.13,
+        "macro_f1": 42.31
+    },
+    "plantdoc": {
+        "classes": 27,
+        "total_images": 236,
+        "correct": 11,
+        "accuracy": 4.66,
+        "macro_precision": 8.8,
+        "macro_recall": 4.39,
+        "macro_f1": 2.59
+    }
+}

@@ -1,0 +1,1430 @@
+{
+  "count": 178,
+  "note": "pred_confidence is the model's softmax/probability, not proof of correctness.",
+  "examples": [
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\052609%20Hartman%20Crabapple%20scab%20single%20leaf.JPG.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.6532500982284546
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\1b321015-6e33-4f18-aade-888f4383fe92.jpeg.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 21,
+      "pred_class": "Potato___Late_blight",
+      "pred_confidence": 0.736213743686676
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\28-500x375.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.6214157342910767
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\816.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.8615638017654419
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\apple%20scab%20leaf.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 20,
+      "pred_class": "Potato___Early_blight",
+      "pred_confidence": 0.8739762306213379
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\apple%20scabnew.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 20,
+      "pred_class": "Potato___Early_blight",
+      "pred_confidence": 0.6433529257774353
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\apple-scab-5366820.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9275346994400024
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\apples_apple-scab_01_zoom.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9550606608390808
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\apples_apple-scab_02_thm.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 20,
+      "pred_class": "Potato___Early_blight",
+      "pred_confidence": 0.9263299703598022
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple Scab Leaf\\apples_apple-scab_10_zoom.jpg",
+      "true_index": 0,
+      "true_class": "Apple___Apple_scab",
+      "pred_index": 3,
+      "pred_class": "Apple___healthy",
+      "pred_confidence": 0.9940927624702454
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple leaf\\20180511_090912-14gtw8a-e1526047952754.jpg",
+      "true_index": 3,
+      "true_class": "Apple___healthy",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.6548247337341309
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple leaf\\20180511_091252-1gy5xf5-e1526048000596.jpg",
+      "true_index": 3,
+      "true_class": "Apple___healthy",
+      "pred_index": 0,
+      "pred_class": "Apple___Apple_scab",
+      "pred_confidence": 0.6854287385940552
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple leaf\\Apple-Leaf-Wallpaper-17.jpg",
+      "true_index": 3,
+      "true_class": "Apple___healthy",
+      "pred_index": 28,
+      "pred_class": "Tomato___Bacterial_spot",
+      "pred_confidence": 0.4508017301559448
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple leaf\\apple-leaf-14319997.jpg",
+      "true_index": 3,
+      "true_class": "Apple___healthy",
+      "pred_index": 14,
+      "pred_class": "Grape___healthy",
+      "pred_confidence": 0.9161576628684998
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\02.-Rust-2017-207u24s.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.43325096368789673
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\0605_Rust-induced_leafspot.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 0,
+      "pred_class": "Apple___Apple_scab",
+      "pred_confidence": 0.6086256504058838
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\185161-004-EAF28842.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.6833137273788452
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\2011-011.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.7240736484527588
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\20130519cedarapplerust.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 8,
+      "pred_class": "Corn_(maize)___Common_rust_",
+      "pred_confidence": 0.27503642439842224
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\20130610_110514.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 0,
+      "pred_class": "Apple___Apple_scab",
+      "pred_confidence": 0.34091120958328247
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\20130802_111632.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.981336772441864
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\4-apple-rust2_19011_matt-bertone.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 16,
+      "pred_class": "Peach___Bacterial_spot",
+      "pred_confidence": 0.5756098628044128
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\9343310-small.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9994580149650574
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Apple rust leaf\\99e886623c2080c22f6519b0e708c531.jpg",
+      "true_index": 2,
+      "true_class": "Apple___Cedar_apple_rust",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.5403633713722229
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf\\4825902504_5fa80b65b8_z.jpg",
+      "true_index": 19,
+      "true_class": "Pepper,_bell___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7435308694839478
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf\\GREEN%20BELL%20PLANT%20YELLOW%20LEAF.JPG.jpg",
+      "true_index": 19,
+      "true_class": "Pepper,_bell___healthy",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.8726084232330322
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf\\IMG_1629.JPG_1507122477.jpg",
+      "true_index": 19,
+      "true_class": "Pepper,_bell___healthy",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.625600278377533
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf\\e33155.jpg",
+      "true_index": 19,
+      "true_class": "Pepper,_bell___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7081422209739685
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf\\pepper_leaf.jpg",
+      "true_index": 19,
+      "true_class": "Pepper,_bell___healthy",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.8140519261360168
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf\\why-are-my-pepper-plants-yellow-yellow-pepper-plants-yellow-leaves-green-veins-pepper-plants-yellow-veins.jpg",
+      "true_index": 19,
+      "true_class": "Pepper,_bell___healthy",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.8910077214241028
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf spot\\000.jpg",
+      "true_index": 18,
+      "true_class": "Pepper,_bell___Bacterial_spot",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.5299530029296875
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf spot\\01.jpg",
+      "true_index": 18,
+      "true_class": "Pepper,_bell___Bacterial_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.8787913918495178
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf spot\\Bacterial-spot-pepper2.jpg",
+      "true_index": 18,
+      "true_class": "Pepper,_bell___Bacterial_spot",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.5576575994491577
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Bell_pepper leaf spot\\H5w92.jpg",
+      "true_index": 18,
+      "true_class": "Pepper,_bell___Bacterial_spot",
+      "pred_index": 15,
+      "pred_class": "Orange___Haunglongbing_(Citrus_greening)",
+      "pred_confidence": 0.6149224042892456
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Blueberry leaf\\P1200701+Vaccinium+ovalifolium+Oval-leaf+Blueberry+leaf+margin+Heather+Meadows+cr.jpg",
+      "true_index": 4,
+      "true_class": "Blueberry___healthy",
+      "pred_index": 8,
+      "pred_class": "Corn_(maize)___Common_rust_",
+      "pred_confidence": 0.8740212917327881
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Blueberry leaf\\blueberrysilverleaf16-1372b.jpg",
+      "true_index": 4,
+      "true_class": "Blueberry___healthy",
+      "pred_index": 21,
+      "pred_class": "Potato___Late_blight",
+      "pred_confidence": 0.6130270957946777
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Blueberry leaf\\leaf-blueberry-15281271.jpg",
+      "true_index": 4,
+      "true_class": "Blueberry___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9917888045310974
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Blueberry leaf\\northern-highbush-blueberry-blue-huckleberry-vaccinium-corymbosum-EHNXRR.jpg",
+      "true_index": 4,
+      "true_class": "Blueberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.76247638463974
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Blueberry leaf\\stock-photo-green-blueberry-leaf-isolated-with-clipping-path-550344304.jpg",
+      "true_index": 4,
+      "true_class": "Blueberry___healthy",
+      "pred_index": 24,
+      "pred_class": "Soybean___healthy",
+      "pred_confidence": 0.33182257413864136
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Blueberry leaf\\vaccinium-angustifolium-low-bush-blueberry_0830_124221.jpg",
+      "true_index": 4,
+      "true_class": "Blueberry___healthy",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.8548564314842224
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Blueberry leaf\\vaccinium_angustifolium_leaf2.JPG.jpg",
+      "true_index": 4,
+      "true_class": "Blueberry___healthy",
+      "pred_index": 3,
+      "pred_class": "Apple___healthy",
+      "pred_confidence": 0.4623318314552307
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\d7b79dbc0bca0eb3e63fbe5dfb256ccd53d90a4eb1413_1260x1260.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 3,
+      "pred_class": "Apple___healthy",
+      "pred_confidence": 0.4467502534389496
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\e52bbb9a08ede2948ba0c006f02fe7b053ad7831d1df6_1260x1260.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 3,
+      "pred_class": "Apple___healthy",
+      "pred_confidence": 0.6296437978744507
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\ed12ff77ce021883de241830dee55e2e53d2c93231699_1260x1260.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 3,
+      "pred_class": "Apple___healthy",
+      "pred_confidence": 0.9992625117301941
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\fc729af279e9087d00bd32d89a1552a756a3ad9de7f2b_1260x1260.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 3,
+      "pred_class": "Apple___healthy",
+      "pred_confidence": 0.9998633861541748
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\five-cherry-tree-green-leaves-white-isolated-background-34493587.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 17,
+      "pred_class": "Peach___healthy",
+      "pred_confidence": 0.945336639881134
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\prunsero_leaf1.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 16,
+      "pred_class": "Peach___Bacterial_spot",
+      "pred_confidence": 0.7383113503456116
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\prunsero_leaf2.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 16,
+      "pred_class": "Peach___Bacterial_spot",
+      "pred_confidence": 0.7077922821044922
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\prunus-virginiana-le-gmittelhauser.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 0,
+      "pred_class": "Apple___Apple_scab",
+      "pred_confidence": 0.5803788304328918
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\red-cherry-tree-leaf-isolated-crisp-white-background-35742030.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 5,
+      "pred_class": "Cherry_(including_sour)___Powdery_mildew",
+      "pred_confidence": 0.6150897741317749
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Cherry leaf\\three-vibrant-leaves-bird-cherry-tree-13905898.jpg",
+      "true_index": 6,
+      "true_class": "Cherry_(including_sour)___healthy",
+      "pred_index": 4,
+      "pred_class": "Blueberry___healthy",
+      "pred_confidence": 0.7952859401702881
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn Gray leaf spot\\IMG_42231.jpg",
+      "true_index": 7,
+      "true_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.7791169881820679
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn Gray leaf spot\\rsz0803Figure6.jpg",
+      "true_index": 7,
+      "true_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.9984446167945862
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn leaf blight\\0796.20graylssymt.jpg",
+      "true_index": 9,
+      "true_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_index": 7,
+      "pred_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "pred_confidence": 0.9955848455429077
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn leaf blight\\07c.jpg",
+      "true_index": 9,
+      "true_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_index": 7,
+      "pred_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "pred_confidence": 0.8974453210830688
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn leaf blight\\1321189.jpg",
+      "true_index": 9,
+      "true_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_index": 7,
+      "pred_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "pred_confidence": 0.9349679350852966
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn leaf blight\\2013Corn_GrayLeafSpot_0815_0003.JPG.jpg",
+      "true_index": 9,
+      "true_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_index": 7,
+      "pred_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "pred_confidence": 0.8716450929641724
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn leaf blight\\Corn-SCLB-2017-1.jpg",
+      "true_index": 9,
+      "true_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.9177744388580322
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn leaf blight\\corn-gray-leaf-spot-f4.jpg",
+      "true_index": 9,
+      "true_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_index": 8,
+      "pred_class": "Corn_(maize)___Common_rust_",
+      "pred_confidence": 0.5363997220993042
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\0796.39maizerust.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.7582433223724365
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\0796.40comrust.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.9968785047531128
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\0796.52srusttelia.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.8965844511985779
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\12-19striprustJIM.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 7,
+      "pred_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "pred_confidence": 0.8840292096138
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\1355.50commonrust.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.951444685459137
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\2256-body-1501555581-1.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.8844442367553711
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\393.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.9146866798400879
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\5496239405_d95bdb97d1_z.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 9,
+      "pred_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "pred_confidence": 0.7302587628364563
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Corn rust leaf\\80104747.jpg",
+      "true_index": 8,
+      "true_class": "Corn_(maize)___Common_rust_",
+      "pred_index": 12,
+      "pred_class": "Grape___Esca_(Black_Measles)",
+      "pred_confidence": 0.809992253780365
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Peach leaf\\00pe.jpg",
+      "true_index": 17,
+      "true_class": "Peach___healthy",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.21907831728458405
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Peach leaf\\peach-leaf-10223898.jpg",
+      "true_index": 17,
+      "true_class": "Peach___healthy",
+      "pred_index": 24,
+      "pred_class": "Soybean___healthy",
+      "pred_confidence": 0.5017164945602417
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Peach leaf\\peach-leaf-16690421.jpg",
+      "true_index": 17,
+      "true_class": "Peach___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.4916502833366394
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Peach leaf\\peach-leaf-isolated-white-background-42295220.jpg",
+      "true_index": 17,
+      "true_class": "Peach___healthy",
+      "pred_index": 4,
+      "pred_class": "Blueberry___healthy",
+      "pred_confidence": 0.8065124154090881
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Peach leaf\\rose_tree_220430.jpg",
+      "true_index": 17,
+      "true_class": "Peach___healthy",
+      "pred_index": 4,
+      "pred_class": "Blueberry___healthy",
+      "pred_confidence": 0.4543067216873169
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\3023.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9137886166572571
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\backus-056-potato-blight.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9578381776809692
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\early-blight-alternaria-alternata-leaf-spotting-on-potato-leaf-X91XJE.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.9205938577651978
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\early-blight-or-target-spot-alternaria-solani-lesions-on-a-tomato-AXK6AY.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9953035116195679
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\earlyblightpotato.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.5462643504142761
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\potato-blight-phytophthora-infestans-close-up-of-upper-surface-of-BMMRXC.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 24,
+      "pred_class": "Soybean___healthy",
+      "pred_confidence": 0.6117439270019531
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\potato-early-blight-alternaria-alternata-lesion-on-a-potato-leaf-a1w1em.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.8879848122596741
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf early blight\\potatobd001.jpg",
+      "true_index": 20,
+      "true_class": "Potato___Early_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.7434126138687134
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf late blight\\20090710-lateblight.jpg",
+      "true_index": 21,
+      "true_class": "Potato___Late_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9394725561141968
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf late blight\\2540_600.jpg",
+      "true_index": 21,
+      "true_class": "Potato___Late_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.670600414276123
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf late blight\\5816740026_d42ef24413_Phytophthora-Infestans.jpg",
+      "true_index": 21,
+      "true_class": "Potato___Late_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9258743524551392
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf late blight\\B2750109-Late_blight_on_a_potato_plant-SPL.jpg",
+      "true_index": 21,
+      "true_class": "Potato___Late_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9871978163719177
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf late blight\\LateBlight04.jpg",
+      "true_index": 21,
+      "true_class": "Potato___Late_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9223074913024902
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf late blight\\irish-blight-symptoms-on-potato-leaves-atmf8b.jpg",
+      "true_index": 21,
+      "true_class": "Potato___Late_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.5507662892341614
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Potato leaf late blight\\potato-late-blight.jpg",
+      "true_index": 21,
+      "true_class": "Potato___Late_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9250347018241882
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Raspberry leaf\\depositphotos_2795312-stock-photo-green-raspberry-leaf.jpg",
+      "true_index": 23,
+      "true_class": "Raspberry___healthy",
+      "pred_index": 14,
+      "pred_class": "Grape___healthy",
+      "pred_confidence": 0.8707661032676697
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Raspberry leaf\\iron-deficiency-raspberry-leaf-chlorosis-isolated-32457798.jpg",
+      "true_index": 23,
+      "true_class": "Raspberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.746401309967041
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Raspberry leaf\\three-raspberry-green-leaves-isolated-white-background-62022932.jpg",
+      "true_index": 23,
+      "true_class": "Raspberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.5623654127120972
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Soyabean leaf\\07feb_ma_sbr3.JPG.jpg",
+      "true_index": 24,
+      "true_class": "Soybean___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.4096156060695648
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Soyabean leaf\\fresh-soy-leaves-isolated-on-260nw-667193923.jpg",
+      "true_index": 24,
+      "true_class": "Soybean___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7154976725578308
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Soyabean leaf\\leaf-raspberry-isolated-on-a-white-stock-photography-image-10106222-1625198.jpg",
+      "true_index": 24,
+      "true_class": "Soybean___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.5438737273216248
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Soyabean leaf\\resistance1c.jpg",
+      "true_index": 24,
+      "true_class": "Soybean___healthy",
+      "pred_index": 15,
+      "pred_class": "Orange___Haunglongbing_(Citrus_greening)",
+      "pred_confidence": 0.9421111941337585
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Soyabean leaf\\stock-photo-fresh-soy-leaves-isolated-on-white-94700095.jpg",
+      "true_index": 24,
+      "true_class": "Soybean___healthy",
+      "pred_index": 4,
+      "pred_class": "Blueberry___healthy",
+      "pred_confidence": 0.895163357257843
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Soyabean leaf\\stock-photo-soy-leaf-isolated-on-white-background-120961801.jpg",
+      "true_index": 24,
+      "true_class": "Soybean___healthy",
+      "pred_index": 4,
+      "pred_class": "Blueberry___healthy",
+      "pred_confidence": 0.601308286190033
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Squash Powdery mildew leaf\\Powdery-Mildew-on-squash.jpg",
+      "true_index": 25,
+      "true_class": "Squash___Powdery_mildew",
+      "pred_index": 8,
+      "pred_class": "Corn_(maize)___Common_rust_",
+      "pred_confidence": 0.6553033590316772
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Squash Powdery mildew leaf\\powdery-mildew-erysiphe-plantani-on-young-sycamore-leaves-b774tm.jpg",
+      "true_index": 25,
+      "true_class": "Squash___Powdery_mildew",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.5779025554656982
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Squash Powdery mildew leaf\\powdery-mildew-sphaerotheca-fuliginea-infection-on-pumpkin-leaves-ajdkkx.jpg",
+      "true_index": 25,
+      "true_class": "Squash___Powdery_mildew",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9131758809089661
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Squash Powdery mildew leaf\\surface.jpg",
+      "true_index": 25,
+      "true_class": "Squash___Powdery_mildew",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.6081170439720154
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\strawberry-leaf--stock-photo-1431216.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 23,
+      "pred_class": "Raspberry___healthy",
+      "pred_confidence": 0.7588810920715332
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\strawberry-leaf-22360816.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 14,
+      "pred_class": "Grape___healthy",
+      "pred_confidence": 0.902621328830719
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\strawberry-leaves-collection-white-background-36684676.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.7757638096809387
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\strawberry-leaves-isolated-white-17473157.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.924569308757782
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\strawberry-leaves-isolated-white-34722259.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9929758310317993
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\strawberry-leaves-stock-image-948674.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9730374217033386
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\strawberry-leaves-stock-picture-948708.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.956853985786438
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Strawberry leaf\\wild-strawberry-leaf-top-view-rotated-KTBXCY.jpg",
+      "true_index": 27,
+      "true_class": "Strawberry___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9980190992355347
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Early blight leaf\\1234080-Early-Blight.jpg",
+      "true_index": 29,
+      "true_class": "Tomato___Early_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7413614392280579
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Early blight leaf\\Shoemaker_7068.JPG.jpg",
+      "true_index": 29,
+      "true_class": "Tomato___Early_blight",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9943886399269104
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Early blight leaf\\bugs-and-blight-061.jpg",
+      "true_index": 29,
+      "true_class": "Tomato___Early_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.7775899767875671
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Early blight leaf\\dscn3175.jpg",
+      "true_index": 29,
+      "true_class": "Tomato___Early_blight",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.9738795757293701
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Early blight leaf\\earlyblight21_.jpg",
+      "true_index": 29,
+      "true_class": "Tomato___Early_blight",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.6677728295326233
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Early blight leaf\\tomato_early-blight_01_zoom.jpg",
+      "true_index": 29,
+      "true_class": "Tomato___Early_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.4364810883998871
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\0.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.8745133280754089
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\55830b60a7cf2.image.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.8596445322036743
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\6134794031202304.jpeg.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9536720514297485
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\636227737977191231-septoria-leaf-spot-VT.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.8638490438461304
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\6447731_orig.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9611842632293701
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\7-17-Photo3_Septoria-MARY.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9975582361221313
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\RARZ4.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 8,
+      "pred_class": "Corn_(maize)___Common_rust_",
+      "pred_confidence": 0.33965665102005005
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato Septoria leaf spot\\early-blight-septoria-ls-fig-3.jpg",
+      "true_index": 32,
+      "true_class": "Tomato___Septoria_leaf_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9247936606407166
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\1684.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.4990181028842926
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\2013-08-20-06.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.9975088834762573
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\90e2c0.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.8543362617492676
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\DSCN1015.JPG.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.9573959112167358
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\IMG_1246.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 11,
+      "pred_class": "Grape___Black_rot",
+      "pred_confidence": 0.2902715802192688
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\Tomato59.JPG.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9963020086288452
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\Tomato_leaf.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.6188578605651855
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf\\main-qimg-d9c2a93f60568485c989670d9bbf703b.jpg",
+      "true_index": 37,
+      "true_class": "Tomato___healthy",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7868215441703796
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\%2320+Bacterial+Spot+and+Speck.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7495851516723633
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\07.17.18-Common_Tomato_Diseases_Canker-258x300.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.9561007618904114
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\Bacterial_spots563.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.9941797256469727
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\Tom_Bact3.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 8,
+      "pred_class": "Corn_(maize)___Common_rust_",
+      "pred_confidence": 0.5827544927597046
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\Tom_Bact7.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7266818881034851
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\Tomato%2BBacterial%2BSpot%2Bon%2BLeaves.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.40756064653396606
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\bact-spot-fig-1.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 5,
+      "pred_class": "Cherry_(including_sour)___Powdery_mildew",
+      "pred_confidence": 0.8787673115730286
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\tomato_V8.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.7605744004249573
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf bacterial spot\\tomato_bacterial-speck_01_zoom.jpg",
+      "true_index": 28,
+      "true_class": "Tomato___Bacterial_spot",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.6351813673973083
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf late blight\\636368370164094909-late-blight-15-.jpg",
+      "true_index": 30,
+      "true_class": "Tomato___Late_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.5974439382553101
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf late blight\\70.jpg",
+      "true_index": 30,
+      "true_class": "Tomato___Late_blight",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.821286678314209
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf late blight\\dsc_8148cs.jpg",
+      "true_index": 30,
+      "true_class": "Tomato___Late_blight",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.4934319853782654
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf late blight\\image.jpg",
+      "true_index": 30,
+      "true_class": "Tomato___Late_blight",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.4373129606246948
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\9511.img.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.6679010391235352
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\D%29AlfMov.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 37,
+      "pred_class": "Tomato___healthy",
+      "pred_confidence": 0.6709280014038086
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\Tomato-Mosaic-1wdr2jx-300x225.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.9128934741020203
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\everystockphoto-21099455-l.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.3428449332714081
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\ill-tomato-of-tomato-mosaic-virus-DBE17N.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.7147155404090881
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\page_2.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9961240887641907
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\tmv-tomato-34.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 28,
+      "pred_class": "Tomato___Bacterial_spot",
+      "pred_confidence": 0.2516089081764221
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\tmv-tomato-9.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 30,
+      "pred_class": "Tomato___Late_blight",
+      "pred_confidence": 0.5322028994560242
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\toma_TMV.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.5225412845611572
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf mosaic virus\\tomato_virus_04_zoom.jpg",
+      "true_index": 36,
+      "true_class": "Tomato___Tomato_mosaic_virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.8660707473754883
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf yellow virus\\11-40580_5.jpg",
+      "true_index": 35,
+      "true_class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.5691521763801575
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf yellow virus\\17fc47.jpg",
+      "true_index": 35,
+      "true_class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "pred_index": 28,
+      "pred_class": "Tomato___Bacterial_spot",
+      "pred_confidence": 0.9660997986793518
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf yellow virus\\8226402877_9abf151b5b_b.jpg",
+      "true_index": 35,
+      "true_class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.49826332926750183
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf yellow virus\\fwa2013313115151.jpg",
+      "true_index": 35,
+      "true_class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.5556356906890869
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf yellow virus\\glyphosate.jpg",
+      "true_index": 35,
+      "true_class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9755730032920837
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato leaf yellow virus\\tylcv-seminar-1-638.jpg",
+      "true_index": 35,
+      "true_class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.6003284454345703
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato mold leaf\\49%20Leafmold%20Bottom.jpg",
+      "true_index": 31,
+      "true_class": "Tomato___Leaf_Mold",
+      "pred_index": 18,
+      "pred_class": "Pepper,_bell___Bacterial_spot",
+      "pred_confidence": 0.3510882258415222
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato mold leaf\\50%20Leafmold%20Top.jpg",
+      "true_index": 31,
+      "true_class": "Tomato___Leaf_Mold",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.5563109517097473
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato mold leaf\\BIGSD.jpg",
+      "true_index": 31,
+      "true_class": "Tomato___Leaf_Mold",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.4539014399051666
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato mold leaf\\black_leaf_mold_in_zina_tina.jpg",
+      "true_index": 31,
+      "true_class": "Tomato___Leaf_Mold",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9996942281723022
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato mold leaf\\dscn6689.jpg",
+      "true_index": 31,
+      "true_class": "Tomato___Leaf_Mold",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.6030842065811157
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\Tomato mold leaf\\fungus-univ-of-minnesoeta.jpg",
+      "true_index": 31,
+      "true_class": "Tomato___Leaf_Mold",
+      "pred_index": 29,
+      "pred_class": "Tomato___Early_blight",
+      "pred_confidence": 0.8096160292625427
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf\\730-grape-leaf-2560x1600-nature-wallpaper.jpg",
+      "true_index": 14,
+      "true_class": "Grape___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.624054491519928
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf\\DSCN7317.JPG.jpg",
+      "true_index": 14,
+      "true_class": "Grape___healthy",
+      "pred_index": 0,
+      "pred_class": "Apple___Apple_scab",
+      "pred_confidence": 0.6410773396492004
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf\\P1130286.jpg",
+      "true_index": 14,
+      "true_class": "Grape___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9926384687423706
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf\\grapes-leaves.jpg",
+      "true_index": 14,
+      "true_class": "Grape___healthy",
+      "pred_index": 13,
+      "pred_class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "pred_confidence": 0.5440852046012878
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf\\grapevine-leaf-7466071.jpg",
+      "true_index": 14,
+      "true_class": "Grape___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.5669653415679932
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf\\vitis-riparia-le-ahaines-b.jpg",
+      "true_index": 14,
+      "true_class": "Grape___healthy",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9867875576019287
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf black rot\\35589125035_662dd5b258_b.jpg",
+      "true_index": 11,
+      "true_class": "Grape___Black_rot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.999599277973175
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf black rot\\Black%20rot%20on%20foliage.jpg",
+      "true_index": 11,
+      "true_class": "Grape___Black_rot",
+      "pred_index": 8,
+      "pred_class": "Corn_(maize)___Common_rust_",
+      "pred_confidence": 0.7276347279548645
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf black rot\\Black%20rot%20on%20foliage2.jpg",
+      "true_index": 11,
+      "true_class": "Grape___Black_rot",
+      "pred_index": 1,
+      "pred_class": "Apple___Black_rot",
+      "pred_confidence": 0.44620227813720703
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf black rot\\brleaf2_zoom.jpg",
+      "true_index": 11,
+      "true_class": "Grape___Black_rot",
+      "pred_index": 26,
+      "pred_class": "Strawberry___Leaf_scorch",
+      "pred_confidence": 0.9988864064216614
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf black rot\\grape_F15a.jpg",
+      "true_index": 11,
+      "true_class": "Grape___Black_rot",
+      "pred_index": 12,
+      "pred_class": "Grape___Esca_(Black_Measles)",
+      "pred_confidence": 0.44953635334968567
+    },
+    {
+      "path": "C:\\Plant_disease_detection\\real_world_dataset\\real_world_dataset\\PlantDoc-Dataset-master\\test\\grape leaf black rot\\piano%20gully%20spray%20seed%20damage%2006%20%289%29.JPG.jpg",
+      "true_index": 11,
+      "true_class": "Grape___Black_rot",
+      "pred_index": 14,
+      "pred_class": "Grape___healthy",
+      "pred_confidence": 0.5189177989959717
+    }
+  ]
+}

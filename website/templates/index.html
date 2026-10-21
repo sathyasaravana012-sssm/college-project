@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}Predict — PlantWild Disease Detector{% endblock %}
+{% block content %}
+<h1>Plant leaf disease detection</h1>
+<p class="lead">
+  Upload a photo of a single leaf (or pick a held-out test sample) and the
+  four-model ensemble will classify it into one of 34 disease / healthy classes.
+</p>
+
+{% if error %}<div class="alert alert-error"><div>{{ error }}</div></div>{% endif %}
+
+<div class="grid-2">
+  <section class="card">
+    <h2>1 &middot; Choose an image</h2>
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+      <label class="file-label">
+        <input type="file" name="image" accept="image/*" id="file-input">
+        <span id="file-name">Click to select a leaf photo…</span>
+      </label>
+      <div id="preview-wrap" class="preview-wrap hidden">
+        <img id="preview" alt="preview">
+      </div>
+
+      <p class="or">— or use a test-set sample —</p>
+      <select name="sample_class" id="sample-class">
+        <option value="">No sample selected</option>
+        {% for s in samples %}
+        <option value="{{ s.class }}"
+                data-file="{{ s.file }}"
+                data-src="{{ url_for('sample_image', cls=s.class, file=s.file) }}">
+          {{ s.class }}
+        </option>
+        {% endfor %}
+      </select>
+      <input type="hidden" name="sample_file" id="sample-file" value="">
+
+      <button type="submit" class="btn btn-primary">Detect disease</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>2 &middot; What you get</h2>
+    <ul class="feature-list">
+      <li><strong>Ensemble prediction</strong> — validation-weighted average of all four models (73.87% test accuracy)</li>
+      <li><strong>Top-5 classes</strong> with probabilities from the ensemble</li>
+      <li><strong>Each model's opinion</strong> side by side — Basic CNN, ResNet18, MobileNetV2, DINOv2 + logreg</li>
+      <li>See the <a href="{{ url_for('report') }}">results &amp; graphs</a> page for confusion matrices and training progress</li>
+    </ul>
+    <div class="model-mini-table">
+      <table>
+        <tr><th>Component</th><th>Test accuracy</th></tr>
+        {% for name, m in individual_models.items() %}
+        <tr><td>{{ name }}</td><td>{{ '%.2f'|format(m.test_accuracy * 100) }}%</td></tr>
+        {% endfor %}
+        <tr class="best-row"><td>Ensemble (validation-weighted)</td><td>{{ ensemble_acc }}</td></tr>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script>
+const fileInput = document.getElementById('file-input');
+const fileName = document.getElementById('file-name');
+const previewWrap = document.getElementById('preview-wrap');
+const preview = document.getElementById('preview');
+const sampleSel = document.getElementById('sample-class');
+const sampleFile = document.getElementById('sample-file');
+
+fileInput.addEventListener('change', () => {
+  if (fileInput.files.length) {
+    fileName.textContent = fileInput.files[0].name;
+    preview.src = URL.createObjectURL(fileInput.files[0]);
+    previewWrap.classList.remove('hidden');
+    sampleSel.selectedIndex = 0;
+    sampleFile.value = '';
+  }
+});
+
+sampleSel.addEventListener('change', () => {
+  const opt = sampleSel.selectedOptions[0];
+  const f = opt.dataset.file || '';
+  sampleFile.value = f;
+  if (f) {
+    fileName.textContent = opt.dataset.src;
+    preview.src = opt.dataset.src;
+    previewWrap.classList.remove('hidden');
+    fileInput.value = '';
+  }
+});
+</script>
+{% endblock %}
